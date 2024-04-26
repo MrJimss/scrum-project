@@ -14,14 +14,24 @@ struct Meeting: View {
             HStack{
                 VStack (alignment:.leading){
                     Text("Seconds Elapsed")
-                        .font(.caption)
+                    .font(.caption)
                     Label("300",systemImage: "hourglass.tophalf.fill")
                 }
                 Spacer()
                 VStack (alignment: .trailing){
                     Text("Seconds Remaing")
-                        .font(.caption)
+                    .font(.caption)
                     Label("600",systemImage: "hourglass.bottomhalf.fill")
+                }
+            }
+            Circle()
+                .strokeBorder(lineWidth: 24)
+            HStack
+            {
+                Text("Speaker 1 of 3")
+                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/)
+                {
+                    Image(systemName: "forward.fill")
                 }
             }
         }
